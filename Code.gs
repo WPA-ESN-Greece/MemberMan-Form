@@ -5,16 +5,21 @@ function onOpen(e){
   
 }
 
+function setUp(){
+  
+  authPopUp()
+  setTriger()
+
+  //notify()
+
+}
 
 function setTriger(){
-
-  authPopUp()
 
   ScriptApp.newTrigger('sendConfirmationEmail')
   .forForm(FormApp.getActiveForm())
   .onFormSubmit()
   .create()
-
 
 }
 
@@ -35,4 +40,13 @@ function authPopUp()
 
 }
 
+function notify(){
 
+  /*var ui = FormApp.getUi()
+    
+    var alertMessage = HtmlService.createHtmlOutput(`<p style="font-family: 'Open Sans'">Set Up completed! Triger set. (Now your form resmponders dhould get an email upon submit)</p>`)
+    
+    FormApp.getUi().showModalDialog(alertMessage,"Documentation")*/
+    //ui.alert("Set Up completed! Triger set. (Now your form resmponders dhould get an email upon submit)",ui.ButtonSet.OK)
+
+}

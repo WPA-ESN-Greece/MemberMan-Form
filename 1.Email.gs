@@ -10,9 +10,7 @@ var SIGNATURE = "The ESN Team"
 function sendConfirmationEmail(e){
 
   var emailTo = e.response.getRespondentEmail()
-  var subject = "Thanks for participating"
-
-
+ 
   var message =                      
   //sets HTML template for information
           `
@@ -22,12 +20,12 @@ function sendConfirmationEmail(e){
           <p> ${SIGNATURE}</p>
           ` //End of message
 
-
   MailApp.sendEmail(
           {
             
               to: emailTo,
               cc: "",
+              bcc:"",
               subject: EMAIL_SUBJECT,
               htmlBody: message,
           })
