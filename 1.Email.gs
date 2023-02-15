@@ -14,8 +14,8 @@ function sendConfirmationEmail(e){
   var message =                      
   //sets HTML template for information
           `
-          <p><b>${HEADER}</b></p> +
-          <p>${MESSAGE_BODY}</p> +
+          <p><b>${HEADER}</b></p> 
+          <p>${MESSAGE_BODY}</p> 
           <br>
           <p> ${SIGNATURE}</p>
           ` //End of message
