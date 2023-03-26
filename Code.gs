@@ -3,14 +3,13 @@ function onOpen(e){
   //Menu Item
   FormApp.getUi().createAddonMenu().addItem('🌌 Set-Up','setTriger').addToUi()
   
+  authPopUp()
+  
 }
 
 function setUp(){
   
-  authPopUp()
   setTriger()
-
-  //notify()
 
 }
 
@@ -40,13 +39,3 @@ function authPopUp()
 
 }
 
-function notify(){
-
-  /*var ui = FormApp.getUi()
-    
-    var alertMessage = HtmlService.createHtmlOutput(`<p style="font-family: 'Open Sans'">Set Up completed! Triger set. (Now your form resmponders dhould get an email upon submit)</p>`)
-    
-    FormApp.getUi().showModalDialog(alertMessage,"Documentation")*/
-    //ui.alert("Set Up completed! Triger set. (Now your form resmponders dhould get an email upon submit)",ui.ButtonSet.OK)
-
-}
